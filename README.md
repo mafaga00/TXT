@@ -50,11 +50,11 @@ Future desired salary - 500
 
 Содержание добавленной информации:
 ```
-Favorite movie - The Big Lebowski,
-Favorite series - La casa de papel,
-favorite food - Potato,
-favorite time of year - Summer,
-country you'd like to visit - Canada.
+Favorite movie - There will be blood,
+Favorite series - Breaking bad,
+favorite food - Steak,
+favorite time of year - Winter,
+country you'd like to visit - China.
 ```
 ***
  11. Создать файл sklls.txt добавить информацию о скиллах которые будут изучены на курсе в формате TXT
