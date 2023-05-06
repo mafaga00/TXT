@@ -2,7 +2,7 @@
 
  1. Создать внешний репозиторий c названием TXT.
  ***
- `Repositories -> New -> Repos Name:XML`
+ `Repositories -> New -> Repos Name:TXT`
  ***
  2. Клонировать репозиторий TXT на локальный компьютер.
 ***
@@ -102,7 +102,7 @@ Python. (Изучение основ. Создание клиент сервер
 ***
  14. На веб интерфейсе создать файл bug_report.txt.
 ***
-`Add file -> Create new file -> Name: bug_report.xml`
+`Add file -> Create new file -> Name: bug_report.txt`
 ***
  15. Сделать Commit changes (сохранить) изменения на веб интерфейсе.
 ***
