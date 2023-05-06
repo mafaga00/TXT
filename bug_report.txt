@@ -1,1 +1,12 @@
-
+"ID"
+"Title(краткое описание)"    основной
+"Description(Подробное описание)"
+"Req id(id требованияя)"
+"Steps To Rreproduce(шаги)"      основной
+"Actual Results(фактический результат)"    основной
+"Expected Results(ожидаемый результат)"    основной
+"Severity(важность)"
+"Priority(срочность)"
+"Attachments(приложение,скриншот,видео,лог)"
+"Workaround(возможность обойти баг)"
+"Status"
