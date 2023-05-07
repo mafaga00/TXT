@@ -114,18 +114,16 @@ Python. (Изучение основ. Создание клиент сервер
 
 Содержание добавленной информации:
 ```
-"ID"
-"Title(краткое описание)"    основной
-"Description(Подробное описание)"
-"Req id(id требованияя)"
-"Steps To Rreproduce(шаги)"      основной
-"Actual Results(фактический результат)"    основной
-"Expected Results(ожидаемый результат)"    основной
-"Severity(важность)"
-"Priority(срочность)"
-"Attachments(приложение,скриншот,видео,лог)"
-"Workaround(возможность обойти баг)"
-"Status"
+"ID" - 1
+"Version" - Windows 10
+"Summary" - Не отображаеться предупреждающие окно в приложении Калькулятор при деление на ноль
+"Req id(id требованияя)" - 2.3
+"Steps" - Открыть приложение Калькулятор, Ввести число, Нажать кнопку '/', вссети другое число, нажать кнопку '='
+"Actual Results(фактический результат)" - Окно ошибки с текстом 'вы не можете делить на 0' отсутствует
+"Expected Results(ожидаемый результат)" - Появляется окно ошибки с текстом,'вы не можете делить на 0'
+"Severity(важность)" - Minor
+"Priority(срочность)" - Low
+"Attachments(приложение,скриншот,видео,лог)" - Скриншот
 ```
 ***
  17. Сделать Commit changes (сохранить) изменения на веб интерфейсе.
@@ -135,4 +133,91 @@ Python. (Изучение основ. Создание клиент сервер
  18. Синхронизировать внешний и локальный репозиторий TXT
 ***
 `git pull`
+***
+***
+
+# Задание по GitHub_2
+
+1. На локальном репозитории сделать ветки для:
+
+* Postman `git branch Postman`
+* Jmeter `git branch Jmeter`
+* CheckLists `git branch CheckLists`
+* Bug Reports `git branch  Bug_Reports`
+* SQL `git branch  SQL`
+* Charles `git branch  Charles`
+* Mobile testing `git branch Mobile_testing`
+***
+2. Запушить все ветки на внешний репозиторий
+
+`git push -u origin Postman Jmeter CheckLists Bug_Reports SQL Charles Mobile_testing`
+***
+3. В ветке Bag Reports сделать текстовый документ со структурой баг репорта.
+
+Меняем ветку: `git checkout Bug_Reports`
+
+Создаём файл: `touch Bug_reports.txt`
+
+Вносим изменения: `vim Bug_reports.txt -> INSERT -> esc -> :wq`
+
+Содержание добавленной информации:
+```
+"ID"
+"Title(краткое описание)" - основной
+"Description(Подробное описание)"
+"Req id(id требованияя)"
+"Steps To Rreproduce(шаги)" - основной
+"Actual Results(фактический результат)" - основной
+"Expected Results(ожидаемый результат)" - основной
+"Severity(важность)"
+"Priority(срочность)"
+"Attachments(приложение,скриншот,видео,лог)"
+"Workaround(возможность обойти баг)"
+"Status"
+```
+***
+4. Запушить структуру багрепорта на внешний репозиторий
+
+`git add Bug_reports.txt && git commit -m "add bug_reports" && git push`
+***
+5. Вмержить ветку Bag Reports в Main.
+
+`git checkout master`
+`git merge Bug_Reports`
+***
+6.Запушить main на внешний репозиторий.
+
+`git push -u origin master`
+***
+7. В ветке CheckLists набросать структуру чек листа.
+
+Меняем ветку: `git checkout CheckLists`
+
+Создаём файл: `touch CheckLists.txt`
+
+Вносим изменения: `vim CheckLists.txt -> INSERT -> esc -> :wq`
+
+Содержание добавленной информации:
+```
+ID
+Priority(приоретет)
+Req(ссылка на требование)
+Module(модуль)
+Title(название)
+Test steps(шаги)
+Result(результат)
+Comment(комментарий)
+```
+***
+8. Запушить структуру на внешний репозиторий.
+
+`git add CheckLists.txt && git commit -m "add CheckLists" && git push`
+***
+9. На внешнем репозитории сделать Pull Request ветки CheckLists в main.
+  `На web-интерфейсе перейти в ветку Check-Lists `
+  `Нажать Compare & pull request - Сreate pull request`
+***
+10. Синхронизировать Внешнюю и Локальную ветки Main.
+
+`git checkout master && git pull`
 ***
