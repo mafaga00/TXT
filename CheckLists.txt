@@ -1,0 +1,8 @@
+ID
+Priority(приоретет)
+Req(ссылка на требование)
+Module(модуль)
+Title(название)
+Test steps(шаги)
+Result(результат)
+Comment(комментарий)
